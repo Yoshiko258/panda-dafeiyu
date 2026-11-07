@@ -1,0 +1,30 @@
+name: astrbot_plugin_qqmind
+display_name: Token消耗高级优化（QQ机器人套件）
+short_desc: Token消耗高级优化——判读/记忆/回复全链路省 token，附赠四轴群聊记忆 + 私聊日记 + 三层人设
+desc: |
+  Token消耗高级优化（QQ机器人套件）：为 AstrBot 省下每一分 token 钱，作者：本少。
+  更多教程与演示 → B站主页 https://space.bilibili.com/411821291
+
+  【省钱主线】判读不带语境只判待判消息（账单实测省六成）、判读/压缩自动走
+  非思考副本、回复逐字语境条数可控（reply_context_messages）、每日 token
+  预算熔断 + 分群账本（/账单 对账 DeepSeek 官网）。
+
+  【记忆能力】群聊：唤醒、读取、记忆、回复四条轴独立可调，打包成轻量/全量/
+  分层/高级四档套餐。浅层判读门判否只拦主模型（不干扰其他插件与命令）；
+  判是才回复，创作/推理自动切思考模型。记忆支持平铺、浅层+群日记分层、
+  按 QQ 号精确记忆线；三层日记标题+时间+标签+摘要，BM25 寻回，零 embedding。
+  私聊：窗口按 token 预算管理，溢出自动压日记，「还记得吗」都能翻出来。
+
+  【人设】浅层状态 + 深层性格常驻，背景故事按篇章库管理（标题常驻、正文召回）。
+  【护栏】每日预算熔断、每群频率上限、@全体忽略、bot 互怼拦截、主动私信多重护栏。
+version: 0.3.8
+author: 本少 (DanDingBenShao)
+social_link: https://space.bilibili.com/411821291
+repo: https://github.com/Yoshiko258/panda-dafeiyu
+astrbot_version: ">=4.29.0"
+support_platforms:
+  - aiocqhttp
+tags:
+  - 省token
+  - 记忆
+  - qq
