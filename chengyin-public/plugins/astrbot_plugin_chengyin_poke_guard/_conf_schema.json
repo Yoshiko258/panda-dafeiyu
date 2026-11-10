@@ -1,0 +1,88 @@
+{
+  "owner_ids": {
+    "description": "主人 ID（不受忍耐度限制）",
+    "type": "list",
+    "default": [
+      "1000000001"
+    ],
+    "hint": "列表里的 QQ 号随便怎么戳都不会被计数，也不会被关小黑屋。"
+  },
+  "window_seconds": {
+    "description": "统计时间窗（秒）",
+    "type": "int",
+    "default": 300,
+    "hint": "同一个人在这个时间窗内连续戳才累计，默认 300 秒 = 5 分钟。"
+  },
+  "warn_count": {
+    "description": "第几次开始嫌烦",
+    "type": "int",
+    "default": 3,
+    "hint": "窗口内戳到第几次时她会抱怨一句，并且这一轮不再反戳。改成 99 等于不抱怨。"
+  },
+  "angry_count": {
+    "description": "第几次真的生气",
+    "type": "int",
+    "default": 4,
+    "hint": "比「开始嫌烦」大，否则会自动加一。"
+  },
+  "blackout_count": {
+    "description": "第几次关小黑屋",
+    "type": "int",
+    "default": 5,
+    "hint": "戳到这么多次就拉黑，必须比「真的生气」大，否则会自动加一。"
+  },
+  "blackout_seconds": {
+    "description": "小黑屋时长（秒）",
+    "type": "int",
+    "default": 7200,
+    "hint": "默认 7200 秒 = 2 小时。期间戳一戳、@、聊天全部不理。"
+  },
+  "enable_llm_lines": {
+    "description": "抱怨台词由 AI 现写（不再是固定几句）",
+    "type": "bool",
+    "default": true,
+    "hint": "开启后每次抱怨/生气/拉黑都会现场生成一句，不再从固定句里挑。生成失败自动退回固定句。"
+  },
+  "llm_provider_id": {
+    "description": "生成台词用的模型 ID",
+    "type": "string",
+    "default": "",
+    "hint": "留空则用当前会话的对话模型。"
+  },
+  "llm_timeout_seconds": {
+    "description": "生成台词超时（秒）",
+    "type": "int",
+    "default": 8,
+    "hint": "超时就用固定句，避免戳一戳卡住。"
+  },
+  "style_prompt": {
+    "description": "台词人设提示",
+    "type": "string",
+    "default": "你是澄音，住在电脑机箱里的蓝发小女仆，爱吃大白饭，说话口语化、短句，句尾常带「嘛/喔/呀/啦」，不用表情符号，不解释、不列点。",
+    "hint": "只有一句台词，说清楚她的身份和说话习惯就够了。"
+  },
+  "llm_max_tokens": {
+    "description": "生成台词的最大 token 数",
+    "type": "int",
+    "default": 400,
+    "hint": "推理模型（如 deepseek-flash）思考也占 token，设太小会返回空；400 比较稳。"
+  },
+  "poke_back_probability": {
+    "description": "前两次被戳时反戳的概率",
+    "type": "float",
+    "default": 0.7,
+    "hint": "0-1。1 = 每次都反戳；0.7 = 十次里约七次反戳。"
+  },
+  "poke_back_cooldown_seconds": {
+    "description": "回戳冷却（秒）",
+    "type": "int",
+    "default": 10,
+    "hint": "同一个人在这个时间内连戳，只回戳一次，避免连环戳回去。0 = 不冷却。"
+  },
+  "poke_reply_enabled": {
+    "description": "回戳后说一句",
+    "type": "bool",
+    "default": true,
+    "hint": "关掉就只戳回去不出声。"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "owner_ids": [
+    "1000000001"
+  ],
+  "window_seconds": 300,
+  "warn_count": 3,
+  "angry_count": 4,
+  "blackout_count": 5,
+  "blackout_seconds": 7200,
+  "enable_llm_lines": true,
+  "llm_provider_id": "",
+  "llm_timeout_seconds": 8,
+  "style_prompt": "你是澄音，住在电脑机箱里的蓝发小女仆，爱吃大白饭，说话口语化、短句，句尾常带「嘛/喔/呀/啦」，不用表情符号，不解释、不列点。",
+  "llm_max_tokens": 400,
+  "poke_back_probability": 0.7,
+  "poke_back_cooldown_seconds": 10,
+  "poke_reply_enabled": true
+}

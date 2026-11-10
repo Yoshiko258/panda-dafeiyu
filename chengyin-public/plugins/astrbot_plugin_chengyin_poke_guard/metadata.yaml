@@ -1,0 +1,8 @@
+name: astrbot_plugin_chengyin_poke_guard
+display_name: 澄音·戳一戳忍耐度
+desc: 同一个人 5 分钟内连续戳她会越来越烦，戳够次数就关小黑屋 2 小时——戳、@、聊天一律不理；主人不受限制
+help: 装上即可。阈值、时间窗、小黑屋时长和主人 ID 都能在插件配置里改
+version: v0.1.0
+author: zeyuan
+support_platforms:
+  - aiocqhttp

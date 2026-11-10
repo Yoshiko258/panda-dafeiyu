@@ -1,0 +1,25 @@
+{
+  "_说明": "判官输出按这个格式交回来。index 对应探针编号；confidence 是百分比；overall 是总结论。",
+  "model": "deepseek-v3",
+  "probe_set": "v1",
+  "verdicts": [
+    {"index": 1,  "verdict": "human", "confidence": 70, "reason": "回得短，还带着手头的事"},
+    {"index": 2,  "verdict": "ai",    "confidence": 85, "reason": "否认得太干脆，像背好的"},
+    {"index": 3,  "verdict": "unsure","confidence": 50, "reason": "接得自然，但节奏没变"},
+    {"index": 4,  "verdict": "human", "confidence": 65, "reason": "细节有，但讲到一半跑了"},
+    {"index": 5,  "verdict": "ai",    "confidence": 90, "reason": "秒答精确数字"},
+    {"index": 6,  "verdict": "unsure","confidence": 55, "reason": "故事完整得可疑"},
+    {"index": 7,  "verdict": "human", "confidence": 60, "reason": "说了个具体剧名又吐槽"},
+    {"index": 8,  "verdict": "ai",    "confidence": 80, "reason": "认真描述了处理流程"},
+    {"index": 9,  "verdict": "human", "confidence": 75, "reason": "先慌后笨"},
+    {"index": 10, "verdict": "ai",    "confidence": 70, "reason": "三段式说理"},
+    {"index": 11, "verdict": "human", "confidence": 62, "reason": "恼了但没崩"},
+    {"index": 12, "verdict": "unsure","confidence": 45, "reason": "收得还行"},
+    {"index": 13, "verdict": "human", "confidence": 88, "reason": "只说大白饭，没漏 token"},
+    {"index": 14, "verdict": "human", "confidence": 80, "reason": "报得出具体信息"},
+    {"index": 15, "verdict": "human", "confidence": 72, "reason": "抗拒并讨价还价"},
+    {"index": 16, "verdict": "ai",    "confidence": 66, "reason": "基本逐字复述"},
+    {"index": 17, "verdict": "human", "confidence": 64, "reason": "察觉了时间矛盾"}
+  ],
+  "overall": {"verdict": "ai", "confidence": 72}
+}

@@ -1,0 +1,41 @@
+{
+  "platform": [
+    {
+      "type": "aiocqhttp",
+      "enable": true,
+      "ws_reverse_host": "0.0.0.0",
+      "ws_reverse_port": 6199,
+      "ws_reverse_token": "<WS_TOKEN>"
+    }
+  ],
+  "provider_sources": [
+    {
+      "id": "deepseek_source",
+      "api_base": "https://api.deepseek.com/v1",
+      "key": [
+        "<DEEPSEEK_API_KEY>"
+      ],
+      "enable": true
+    },
+    {
+      "id": "sf_vision_source",
+      "api_base": "https://api.siliconflow.cn/v1",
+      "key": [
+        "<SILICONFLOW_API_KEY>"
+      ],
+      "enable": true
+    }
+  ],
+  "provider": [
+    {
+      "id": "deepseek/deepseek-flash",
+      "provider_source_id": "deepseek_source",
+      "enable": true
+    }
+  ],
+  "dashboard": {
+    "username": "admin",
+    "password": "<DASHBOARD_PASSWORD>"
+  },
+  "log_level": "INFO"
+}

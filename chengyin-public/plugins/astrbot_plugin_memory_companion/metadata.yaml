@@ -1,0 +1,8 @@
+﻿name: astrbot_plugin_memory_companion
+display_name: 记忆桥（livingmemory 适配）
+desc: 让陪伴插件把日常日程和日记归档进 livingmemory；装上空目录即可，无需配置
+help: 装上即生效。陪伴插件的「记忆桥」出站队列会自动投递到 livingmemory
+version: v0.1.0
+author: zeyuan
+support_platforms:
+  - aiocqhttp
